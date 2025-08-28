@@ -6,8 +6,10 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["lucide-react"],
   },
+
   server: {
     host: "0.0.0.0",
     port: parseInt(process.env.PORT) || 5173,
+    allowedHosts: ["panchayat-9fp5.onrender.com", "*"],
   },
 });
